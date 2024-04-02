@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfólio pessoal (CV online) Edpo Macedo</title>
+    <style>
+        #sobreMimText, #formacaoText, #portfolioText, #contatoText {
+            display: none;
+        }
+    </style>
+</head>
+<body>
+<header>
+    <br>
+    <img src="Edpo.jpg" height="150">
+    
+    <h1>Olá! Eu sou o Edpo Macedo.</h1>
+    <p>Estudante de Análise e Desenvolvimento e Sistemas pela Uninter.</p>
+    <p>Quer saber mais? Clique em um dos botões abaixo!</p>
+    <nav>
+        <button id="sobreMim">Sobre Mim</button>
+        <button id="formacao">Formação</button>
+        <button id="portfolio">Portfólio</button>        
+        <button id="contato">Contato</button>
+    </nav>
+    <div id="sobreMimText"><br>Resumo:<br>
+        Autodidata, observador e curioso, tenho facilidade em buscar soluções e em tomar 
+        decisões com confiança. <br>Possuo também boa adaptabilidade a mudanças, noção de 
+        prioridades e habilidade com relações interpessoais.</div>
+    <div id="formacaoText"><br>Conhecimentos:<br>
+        Inglês avançado em leitura/ escrita e boa capacidade de conversação.
+        <br>Cursos extras em Git, Python, HTML, CSS e Javascript.
+        Conhecimento em Linux, Windows, hardware, apresentações, planilhas e docs.<br>
+        <br>Formação:<br>
+        Centro Universitário Internacional Uninter (jul. 2023 – dez. 2025)
+        Tecnologia em Análise e Desenvolvimento de Sistemas</div>
+    <div id="portfolioText"><br>Experiência:
+        <br>Kompa Saúde: Coordenador de Operações (set. 2020 – atualmente)
+        <br>Gestão de produto, estruturação operacional, coordenação de atendimento e 
+        vendas, helpdesk e suporte ao time de pesquisa e desenvolvimento.<br>
+        <br>TN Lab Consultant: Assistente Administrativo (jun. 2019 – mar. 2020)
+        <br>Comunicação com fornecedores e rotinas administrativas.<br>
+        <br>Hotel Luni: Chefe de Recepção (abr. 2015 – abr. 2019)
+        <br>Apoio a proprietária em gerenciamento, gestão de equipes, helpdesk, rotinas 
+        administrativas e relação com clientes, agências e fornecedores.</div>
+    <div id="contatoText"><br>Dados de contato:<br>
+        11 93435-6842 | edpohmacedo@gmail.com | linkedin.com/in/edpohmacedo</div>
+</header>
+
+<script>
+    document.getElementById('sobreMim').addEventListener('click', function() {
+        document.getElementById('sobreMimText').style.display = 'block';
+        document.getElementById('formacaoText').style.display = 'none';
+        document.getElementById('portfolioText').style.display = 'none';
+        document.getElementById('contatoText').style.display = 'none';
+    });
+
+    document.getElementById('formacao').addEventListener('click', function() {
+        document.getElementById('sobreMimText').style.display = 'none';
+        document.getElementById('formacaoText').style.display = 'block';
+        document.getElementById('portfolioText').style.display = 'none';
+        document.getElementById('contatoText').style.display = 'none';
+    });
+
+    document.getElementById('portfolio').addEventListener('click', function() {
+        document.getElementById('sobreMimText').style.display = 'none';
+        document.getElementById('formacaoText').style.display = 'none';
+        document.getElementById('portfolioText').style.display = 'block';
+        document.getElementById('contatoText').style.display = 'none';
+    });
+
+    document.getElementById('contato').addEventListener('click', function() {
+        document.getElementById('sobreMimText').style.display = 'none';
+        document.getElementById('formacaoText').style.display = 'none';
+        document.getElementById('portfolioText').style.display = 'none';
+        document.getElementById('contatoText').style.display = 'block';
+    });
+</script>
+
+</body>
+</html>
